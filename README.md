@@ -226,6 +226,11 @@ customer_etl >> date_etl >> product_etl >> store_etl >> staff_etl >> salestarget
 
 ![Ekran Resmi 2021-02-28 11 36 33](https://user-images.githubusercontent.com/66178028/109412475-3f217500-79b9-11eb-824c-749e8fc409c9.png)
 
+### Step 6 : Trigger First Airflow DAG
+
+![Ekran Resmi 2021-02-28 11 38 08](https://user-images.githubusercontent.com/66178028/109412518-7db72f80-79b9-11eb-971a-accb7a8a7592.png)
+
+
 ![PoweBI Star Schema](https://user-images.githubusercontent.com/66178028/109411752-50688280-79b5-11eb-9f93-6c35382a96ca.PNG)
 
 
