@@ -1,4 +1,5 @@
 # Coffee Shop ETL and Reporting
 
-PowerBI Star Schema [image](https://user-images.githubusercontent.com/66178028/109411666-c9b3a580-79b4-11eb-8192-5a074f62cada.png)
+![PoweBI Star Schema](https://user-images.githubusercontent.com/66178028/109411752-50688280-79b5-11eb-9f93-6c35382a96ca.PNG)
+
 
