@@ -226,7 +226,7 @@ customer_etl >> date_etl >> product_etl >> store_etl >> staff_etl >> salestarget
 
 ![Ekran Resmi 2021-02-28 11 36 33](https://user-images.githubusercontent.com/66178028/109412475-3f217500-79b9-11eb-824c-749e8fc409c9.png)
 
-### Step 6 : Trigger First Airflow DAG
+### Step 7 : Trigger First Airflow DAG
 
 DAG was triggered and all its steps worked successfully. After that, DAG will run at 6:30 each morning and summarize all the tables to DWH.
 
@@ -236,6 +236,20 @@ Summary tables successfully created in BigQuery DWH scheme.
 
 ![Ekran Resmi 2021-02-28 11 40 10](https://user-images.githubusercontent.com/66178028/109412573-d5559b00-79b9-11eb-91d8-a51d70919297.png)
 
+### Step 8 : Basic Exploratory Data Analysis
+
+ - Customers propensity to buy according to their generation.
+```
+SELECT 
+      c.generation,
+      SUM(quantity) AS quantity,
+      SUM(line_item_amount) AS line_item_amount,
+      SUM(line_item_amount) / SUM(quantity) AS average_basket_amount
+FROM DWH.SalesSummary ss
+INNER JOIN DWH.Customer c ON ss.customer_id = c.customer_id
+INNER JOIN DWH.Product p ON p.product_id = ss.product_id
+GROUP BY c.generation
+```
 
 ![PoweBI Star Schema](https://user-images.githubusercontent.com/66178028/109411752-50688280-79b5-11eb-9f93-6c35382a96ca.PNG)
 
