@@ -10,7 +10,7 @@ https://www.kaggle.com/ylchang/coffee-shop-sample-data-1113
 
 ## Tools
 
-- In the project, Google Cloud Composer, Apache Airflow, Python and BigQuer were used to operate the ETL process.
+- In the project, Google Cloud Composer, Apache Airflow, Python and BigQuery were used to operate the ETL process.
 - BigQuery was used for analysis.
 - Based on the summary data, a continuously trackable dashboard was created. PowerBI is used for this.
 
