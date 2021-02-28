@@ -251,6 +251,11 @@ INNER JOIN DWH.Product p ON p.product_id = ss.product_id
 GROUP BY c.generation
 ```
 
+Baby Boomers are the most shoppers generation. But GenX buys more expensive products.
+
+![Ekran Resmi 2021-02-28 11 45 11](https://user-images.githubusercontent.com/66178028/109412690-7b090a00-79ba-11eb-9e12-3184b9f20891.png)
+
+
 ![PoweBI Star Schema](https://user-images.githubusercontent.com/66178028/109411752-50688280-79b5-11eb-9f93-6c35382a96ca.PNG)
 
 
