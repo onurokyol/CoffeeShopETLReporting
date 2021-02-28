@@ -272,6 +272,27 @@ Where rank < 6
 
 ![Ekran Resmi 2021-02-28 11 47 53](https://user-images.githubusercontent.com/66178028/109412746-d935ed00-79ba-11eb-81a9-a5ed76f47d2b.png)
 
+ - Most 3 seller products according to weeks
+
+```
+SELECT * FROM (
+SELECT 
+      Year_ID,
+      Week_ID,
+      p.product,
+      SUM(quantity) AS quantity,
+      RANK() OVER ( PARTITION BY Year_ID,Week_ID ORDER BY SUM(quantity) DESC) AS rank
+FROM DWH.SalesSummary ss
+INNER JOIN DWH.Customer c ON ss.customer_id = c.customer_id
+INNER JOIN DWH.Product p ON p.product_id = ss.product_id
+INNER JOIN DWH.Date d ON d.transaction_date = ss.transaction_date
+GROUP BY Year_ID,Week_ID,p.product
+)
+Where rank < 4
+```
+
+![Ekran Resmi 2021-02-28 11 49 42](https://user-images.githubusercontent.com/66178028/109412797-1b5f2e80-79bb-11eb-93f2-402f2cdb7d93.png)
+
 
 
 ![PoweBI Star Schema](https://user-images.githubusercontent.com/66178028/109411752-50688280-79b5-11eb-9f93-6c35382a96ca.PNG)
