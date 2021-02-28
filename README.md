@@ -41,7 +41,10 @@ I built the ETL process with Python. I will be able to run scheduling and monito
 ### Step 5 : Creating first DAG with Python
 
 I created Airflow DAG with Python. Tables are created in DWH scheme by pulling data from OLTP tables and doing some transformations.
+
 While doing this, I combined some tables, simplified them and added new fields for enrichment.
+
+The system works by finding the maximum day to receive new incoming sales. However, I performed the initial load in order to get all sales first.
 
 ```
 from datetime import timedelta, datetime
@@ -218,6 +221,10 @@ dag = dag_etl
 
 customer_etl >> date_etl >> product_etl >> store_etl >> staff_etl >> salestarget_etl >> pastryinventory_etl >> salessummary_etl
 ```
+
+### Step 6 : Uploading .py DAG file to Cloud Composer DAG Folder
+
+![Ekran Resmi 2021-02-28 11 36 33](https://user-images.githubusercontent.com/66178028/109412475-3f217500-79b9-11eb-824c-749e8fc409c9.png)
 
 ![PoweBI Star Schema](https://user-images.githubusercontent.com/66178028/109411752-50688280-79b5-11eb-9f93-6c35382a96ca.PNG)
 
