@@ -30,6 +30,8 @@ I wanted to simulate the csv data as if it was actually coming from an OLTP syst
 
 ![Ekran Resmi 2021-02-28 11 23 39](https://user-images.githubusercontent.com/66178028/109412163-6f681400-79b7-11eb-8d4c-bc503a4708eb.png)
 
+![Ekran Resmi 2021-02-28 11 24 24](https://user-images.githubusercontent.com/66178028/109412182-8f97d300-79b7-11eb-98f9-d540f8dc4767.png)
+
 ![PoweBI Star Schema](https://user-images.githubusercontent.com/66178028/109411752-50688280-79b5-11eb-9f93-6c35382a96ca.PNG)
 
 
