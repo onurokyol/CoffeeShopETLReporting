@@ -39,7 +39,7 @@ I built the ETL process with Python. I will be able to run scheduling and monito
 ![Ekran Resmi 2021-02-28 11 26 43](https://user-images.githubusercontent.com/66178028/109412237-db4a7c80-79b7-11eb-95d1-40cd4a71351e.png)
 
 ### Step 5 : Creating first DAG
-
+```
 from datetime import timedelta, datetime
 import json
 from airflow import DAG
@@ -213,7 +213,7 @@ dag = dag_etl
 )
 
 customer_etl >> date_etl >> product_etl >> store_etl >> staff_etl >> salestarget_etl >> pastryinventory_etl >> salessummary_etl
-
+```
 
 ![PoweBI Star Schema](https://user-images.githubusercontent.com/66178028/109411752-50688280-79b5-11eb-9f93-6c35382a96ca.PNG)
 
