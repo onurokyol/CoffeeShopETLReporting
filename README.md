@@ -293,8 +293,17 @@ Where rank < 4
 
 ![Ekran Resmi 2021-02-28 11 49 42](https://user-images.githubusercontent.com/66178028/109412797-1b5f2e80-79bb-11eb-93f2-402f2cdb7d93.png)
 
+### Step 9 : Implement Dashboard For Data Analysis
 
+Tables were imported as DWH in PowerBI Dashboard and relationships were established in the same star schema logic.
 
 ![PoweBI Star Schema](https://user-images.githubusercontent.com/66178028/109411752-50688280-79b5-11eb-9f93-6c35382a96ca.PNG)
+
+Some new calculated fields have been added and a summary dashboard has been created
+
+![Dashboard1](https://user-images.githubusercontent.com/66178028/109412863-7abd3e80-79bb-11eb-9926-0d2bf82f0ab8.PNG)
+
+![Dashboard2](https://user-images.githubusercontent.com/66178028/109412867-80b31f80-79bb-11eb-9ee2-3e937c19d5ca.PNG)
+
 
 
