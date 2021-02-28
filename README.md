@@ -18,6 +18,8 @@ https://www.kaggle.com/ylchang/coffee-shop-sample-data-1113
 
 ### Step 1 : Creating a Bucket in Google Cloud Storage
 
+![Cloud Storage Bucket](https://user-images.githubusercontent.com/66178028/109412015-c3262d80-79b6-11eb-9261-8885c40bc711.png)
+
 ![PoweBI Star Schema](https://user-images.githubusercontent.com/66178028/109411752-50688280-79b5-11eb-9f93-6c35382a96ca.PNG)
 
 
