@@ -38,7 +38,11 @@ I built the ETL process with Python. I will be able to run scheduling and monito
 
 ![Ekran Resmi 2021-02-28 11 26 43](https://user-images.githubusercontent.com/66178028/109412237-db4a7c80-79b7-11eb-95d1-40cd4a71351e.png)
 
-### Step 5 : Creating first DAG
+### Step 5 : Creating first DAG with Python
+
+I created Airflow DAG with Python. Tables are created in DWH scheme by pulling data from OLTP tables and doing some transformations.
+While doing this, I combined some tables, simplified them and added new fields for enrichment.
+
 ```
 from datetime import timedelta, datetime
 import json
