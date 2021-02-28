@@ -22,6 +22,7 @@ https://www.kaggle.com/ylchang/coffee-shop-sample-data-1113
 
 ### Step 2 : Uploading Files to Google Cloud Storage 
 
+![Uploading Files](https://user-images.githubusercontent.com/66178028/109412078-041e4200-79b7-11eb-9839-801f51315284.png)
 
 
 ![PoweBI Star Schema](https://user-images.githubusercontent.com/66178028/109411752-50688280-79b5-11eb-9f93-6c35382a96ca.PNG)
