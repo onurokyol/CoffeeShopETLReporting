@@ -228,7 +228,13 @@ customer_etl >> date_etl >> product_etl >> store_etl >> staff_etl >> salestarget
 
 ### Step 6 : Trigger First Airflow DAG
 
+DAG was triggered and all its steps worked successfully. After that, DAG will run at 6:30 each morning and summarize all the tables to DWH.
+
 ![Ekran Resmi 2021-02-28 11 38 08](https://user-images.githubusercontent.com/66178028/109412518-7db72f80-79b9-11eb-971a-accb7a8a7592.png)
+
+Summary tables successfully created in BigQuery DWH scheme.
+
+![Ekran Resmi 2021-02-28 11 40 10](https://user-images.githubusercontent.com/66178028/109412573-d5559b00-79b9-11eb-91d8-a51d70919297.png)
 
 
 ![PoweBI Star Schema](https://user-images.githubusercontent.com/66178028/109411752-50688280-79b5-11eb-9f93-6c35382a96ca.PNG)
